@@ -8,11 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        setupLayout()
+    }
+    func setupLayout(){
+        view.backgroundColor = .red
+        
     }
 
     override func didReceiveMemoryWarning() {

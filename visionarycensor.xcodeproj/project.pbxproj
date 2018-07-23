@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		016D52D278BBCE3506ACEEA4 /* Pods_visionarycensor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 901E354A9F9028EDC9C8C7C8 /* Pods_visionarycensor.framework */; };
+		262C9C2B2105492D006B1609 /* CameraHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262C9C2A2105492D006B1609 /* CameraHelper.swift */; };
 		26545CEF2104056E0062080C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26545CEE2104056E0062080C /* AppDelegate.swift */; };
 		26545CF12104056E0062080C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26545CF02104056E0062080C /* MainViewController.swift */; };
 		26545CF6210405700062080C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26545CF5210405700062080C /* Assets.xcassets */; };
 		26545CF9210405700062080C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26545CF7210405700062080C /* LaunchScreen.storyboard */; };
+		26F4686221058385004628AE /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F4686121058385004628AE /* PreviewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		262C9C2A2105492D006B1609 /* CameraHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraHelper.swift; sourceTree = "<group>"; };
 		26545CEB2104056E0062080C /* visionarycensor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionarycensor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26545CEE2104056E0062080C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26545CF02104056E0062080C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		26545CF5210405700062080C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26545CF8210405700062080C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26545CFA210405700062080C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26F4686121058385004628AE /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		475AD222F8CD698E89C72B9A /* Pods-visionarycensor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-visionarycensor.release.xcconfig"; path = "Pods/Target Support Files/Pods-visionarycensor/Pods-visionarycensor.release.xcconfig"; sourceTree = "<group>"; };
+		901E354A9F9028EDC9C8C7C8 /* Pods_visionarycensor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_visionarycensor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		936DC0D127A83141B6BBEF14 /* Pods-visionarycensor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-visionarycensor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-visionarycensor/Pods-visionarycensor.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +35,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				016D52D278BBCE3506ACEEA4 /* Pods_visionarycensor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		262C9C2621052A6A006B1609 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				26545CF02104056E0062080C /* MainViewController.swift */,
+				26F4686121058385004628AE /* PreviewViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		262C9C2721052A7C006B1609 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		262C9C2821052AA0006B1609 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		262C9C29210548F8006B1609 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				262C9C2A2105492D006B1609 /* CameraHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		26545CE22104056E0062080C = {
 			isa = PBXGroup;
 			children = (
 				26545CED2104056E0062080C /* visionarycensor */,
 				26545CEC2104056E0062080C /* Products */,
+				930D0049E5543F1BA8A1C2C7 /* Pods */,
+				943E6D848BA8A83F338C164E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,13 +94,33 @@
 		26545CED2104056E0062080C /* visionarycensor */ = {
 			isa = PBXGroup;
 			children = (
+				262C9C29210548F8006B1609 /* Helper */,
+				262C9C2821052AA0006B1609 /* Model */,
+				262C9C2721052A7C006B1609 /* View */,
+				262C9C2621052A6A006B1609 /* Controller */,
 				26545CEE2104056E0062080C /* AppDelegate.swift */,
-				26545CF02104056E0062080C /* MainViewController.swift */,
 				26545CF5210405700062080C /* Assets.xcassets */,
 				26545CF7210405700062080C /* LaunchScreen.storyboard */,
 				26545CFA210405700062080C /* Info.plist */,
 			);
 			path = visionarycensor;
+			sourceTree = "<group>";
+		};
+		930D0049E5543F1BA8A1C2C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				936DC0D127A83141B6BBEF14 /* Pods-visionarycensor.debug.xcconfig */,
+				475AD222F8CD698E89C72B9A /* Pods-visionarycensor.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		943E6D848BA8A83F338C164E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				901E354A9F9028EDC9C8C7C8 /* Pods_visionarycensor.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,9 +130,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26545CFD210405700062080C /* Build configuration list for PBXNativeTarget "visionarycensor" */;
 			buildPhases = (
+				A24C89A5C635BCA5DA673BBF /* [CP] Check Pods Manifest.lock */,
 				26545CE72104056E0062080C /* Sources */,
 				26545CE82104056E0062080C /* Frameworks */,
 				26545CE92104056E0062080C /* Resources */,
+				68845153D5E09DCBD1EF1253 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +190,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		68845153D5E09DCBD1EF1253 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-visionarycensor/Pods-visionarycensor-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-visionarycensor/Pods-visionarycensor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A24C89A5C635BCA5DA673BBF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-visionarycensor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		26545CE72104056E0062080C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -133,6 +236,8 @@
 			files = (
 				26545CF12104056E0062080C /* MainViewController.swift in Sources */,
 				26545CEF2104056E0062080C /* AppDelegate.swift in Sources */,
+				26F4686221058385004628AE /* PreviewViewController.swift in Sources */,
+				262C9C2B2105492D006B1609 /* CameraHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,10 +371,13 @@
 		};
 		26545CFE210405700062080C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 936DC0D127A83141B6BBEF14 /* Pods-visionarycensor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y979V2DJTF;
 				INFOPLIST_FILE = visionarycensor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -283,10 +391,13 @@
 		};
 		26545CFF210405700062080C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 475AD222F8CD698E89C72B9A /* Pods-visionarycensor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y979V2DJTF;
 				INFOPLIST_FILE = visionarycensor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

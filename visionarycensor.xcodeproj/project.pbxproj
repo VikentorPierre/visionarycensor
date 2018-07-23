@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		016D52D278BBCE3506ACEEA4 /* Pods_visionarycensor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 901E354A9F9028EDC9C8C7C8 /* Pods_visionarycensor.framework */; };
+		262910EE210688E6005BB89C /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262910EC210688E6005BB89C /* Preview.swift */; };
+		262910EF210688E6005BB89C /* Preview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 262910ED210688E6005BB89C /* Preview.xib */; };
 		262C9C2B2105492D006B1609 /* CameraHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262C9C2A2105492D006B1609 /* CameraHelper.swift */; };
 		26545CEF2104056E0062080C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26545CEE2104056E0062080C /* AppDelegate.swift */; };
 		26545CF12104056E0062080C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26545CF02104056E0062080C /* MainViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		262910EC210688E6005BB89C /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
+		262910ED210688E6005BB89C /* Preview.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Preview.xib; sourceTree = "<group>"; };
 		262C9C2A2105492D006B1609 /* CameraHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraHelper.swift; sourceTree = "<group>"; };
 		26545CEB2104056E0062080C /* visionarycensor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionarycensor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26545CEE2104056E0062080C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 			children = (
 				26545CF02104056E0062080C /* MainViewController.swift */,
 				26F4686121058385004628AE /* PreviewViewController.swift */,
+				262910EC210688E6005BB89C /* Preview.swift */,
+				262910ED210688E6005BB89C /* Preview.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -185,6 +191,7 @@
 			files = (
 				26545CF9210405700062080C /* LaunchScreen.storyboard in Resources */,
 				26545CF6210405700062080C /* Assets.xcassets in Resources */,
+				262910EF210688E6005BB89C /* Preview.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +245,7 @@
 				26545CEF2104056E0062080C /* AppDelegate.swift in Sources */,
 				26F4686221058385004628AE /* PreviewViewController.swift in Sources */,
 				262C9C2B2105492D006B1609 /* CameraHelper.swift in Sources */,
+				262910EE210688E6005BB89C /* Preview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
